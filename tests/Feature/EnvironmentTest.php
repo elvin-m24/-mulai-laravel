@@ -9,8 +9,8 @@ use Tests\TestCase;
 class EnvironmentTest extends TestCase
 {
     public function testEnv(){
-        $appName = env("Youtube");
+        $appName = env("Koding Indonesia");
 
-        self::assertEquals("Koding Indonesia", $appName);
+        self::assertEquals("", $appName);
     }   
 }

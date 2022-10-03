@@ -8,6 +8,11 @@ use Illuminate\Http\Request;
 class HelloController extends Controller
 {
     private HelloService $helloService;
+    public function testController()
+    {
+        $this->get('/controller/hello')
+            ->assertSeeText('Hello World');
+    }
 
     public function __construct(HelloService $helloService)
     {
